@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:wght@400;700&family=Viga&display=swap');
+
+:root {
+    --animate-duration: 2s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #EEEDED;
+    background-image: linear-gradient(120deg, #08124e 30%, #160d35 70%, #04111b 100%);
+    animation: background-image 4s ease-in forwards;
+}
+
+@keyframes background-image {
+    0% {
+        background-image: linear-gradient(120deg, #08124e 30%, #160d35 70%, #04111b 100%);
+    }
+
+    100% {
+        background-position: center;
+        background-size: cover;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../img/bg-home.jpg);
+    }
+}
+
+.Menu-utama {
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.5), -3px -3px 3px rgba(255, 255, 255, 0.5);
+    padding: 2.5rem 4rem;
+    gap: 1rem;
+    background-color: black;
+    text-align: center;
+    background: transparent;
+    backdrop-filter: blur(35px);
+}
+
+.Judul h1 {
+    font-family: 'Viga', sans-serif;
+    font-size: 2.5rem;
+}
+
+.sub-judul {
+    font-family: 'Sometype Mono', monospace;
+    margin-bottom: 2rem;
+}
+
+.Navigasi {
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5), -5px -5px 5px rgba(255, 255, 255, 0.5);
+}
+
+.Navigasi ul, a {
+    text-decoration: none;
+    list-style: none;
+    color: #EEEDED;
+    display: flex;
+    justify-content: center;
+    padding: .5rem 1rem;
+    font-family: 'Sometype Mono', monospace;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.Navigasi ul li a:hover {
+    color: #2f3338;
+    background-color: #EEEDED;
+    border-radius: 5px;
+    transform: translate(0, -5px);
+    transition: 0.5s ease-out;
+    opacity: 0.9;
+}
+
+/* breakpoints */
+@media screen and (max-width: 768px) {
+    .Navigasi a {
+        display: block;
+    }
+
+    .Navigasi a:hover {
+        color: #2f3338;
+        background-color: #EEEDED;
+        transform: scale(1.1);
+        transition: 0.3s ease-in-out;
+        opacity: 0.8;
+    }
+}

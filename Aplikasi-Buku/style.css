@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:wght@400;700&family=Viga&display=swap');
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Sometype Mono', monospace;
+  line-height: 1.5;
+  color: #333;
+  background-color: bisque;
+}
+
+/* Header*/
+.head_bar {
+  background-image: linear-gradient(to right, #250541 50%, #b9b0b0);
+  padding: 1rem;
+  font-family: 'Viga', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.head_bar__title {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+  align-self: self-start;
+}
+
+.head_bar a {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.5rem 1rem;
+  transform: translate(0, -50%);
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+  transition: .5s ease-in;
+  background-color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.head_bar__title {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+  color: rgb(255, 252, 214);
+}
+
+/* Input Section Styles */
+.input_section {
+  margin-top: 2rem;
+}
+
+.input_section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.input {
+  margin: 1rem 3rem;
+}
+
+.input label {
+  display: block;
+  margin-bottom: 0.5rem;
+
+}
+
+.input input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #474141;
+  border-radius: 5px;
+}
+
+.input_inline {
+  margin: 1rem 3rem;
+}
+
+.input_inline label {
+  margin-right: 1rem;
+}
+
+#bookSubmit {
+  margin: 1rem 3rem;
+}
+
+/* Button Styles */
+button {
+  border: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type='submit'] {
+  background-color: #333;
+  color: #fff;
+}
+
+button.green {
+  background-color: darkgreen;
+  color: white;
+}
+
+button.red {
+  background-color: darkred;
+  color: white;
+}
+
+button.blue {
+  background-color: darkblue;
+  color: white;
+}
+
+/* Search Section Styles */
+.search_section {
+  margin: 1rem 3rem;
+}
+
+.search_section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.search_section input[type='text'] {
+  width: 70%;
+  padding: 0.5rem;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  margin-right: .5rem;
+  margin-bottom: .3rem;
+}
+
+/* Search Results Styles */
+.search_results {
+  margin: 1rem 3rem;
+}
+
+.search_results h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Book Shelf Styles */
+.container-book {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+.book_shelf {
+  margin: 1rem 3rem;
+}
+
+.book_shelf h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border: 1px solid #000000;
+  padding: .3rem;
+}
+
+.book_item {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  margin: .5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book_item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.book_item p {
+  margin-bottom: 0.5rem;
+}
+
+.book_item .action {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .head_bar {
+    background-image: linear-gradient(to right, #250541 50%, #b9b0b0);
+    padding: 1rem;
+    font-family: 'Viga', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column nowrap;
+  }
+
+  .head_bar__title {
+    align-self: center;
+  }
+
+  .head_bar a {
+    transform: translate(0, 10%);
+  }
+}
